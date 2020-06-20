@@ -1,0 +1,7 @@
+
+.login {
+  padding: 20rpx;
+}
+buttton {
+  width: 70%;
+}

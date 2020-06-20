@@ -1,0 +1,71 @@
+<view class="user-info-wrap">
+  <view wx:if="{{userinfo.avatarUrl}}" class="usew-img-wrap">
+    <image class="user-img" src="{{userinfo.avatarUrl}}"></image>
+    <view class="user-info">
+      <image class="user-icon" src="{{userinfo.avatarUrl}}"></image>
+      <view class="user-name">{{userinfo.nickName}}</view>
+    </view>
+  </view>
+  <view wx:else class="user-button">
+    <navigator url="/pages/login/index">登录</navigator>
+  </view>
+</view>
+
+<view class="user-content">
+  <view class="user-main">
+    <!-- 历史记录 -->
+    <view class="history-wrap">
+      <navigator>
+        <view class="his-num">0</view>
+        <view class="his-name">收藏的店铺</view>
+      </navigator>
+      <navigator>
+        <view class="his-num">0</view>
+        <view class="his-name">收藏的商品</view>
+      </navigator>
+      <navigator>
+        <view class="his-num">0</view>
+        <view class="his-name">关注的商品</view>
+      </navigator>
+      <navigator>
+        <view class="his-num">0</view>
+        <view class="his-name">我的足迹</view>
+      </navigator>
+    </view>
+    <!-- 我的订单 -->
+    <view class="order-wrap">
+      <view class="order-title">我的订单</view>
+      <view class="order-content">
+        <navigator>
+          <view class="iconfont icon-icon-"></view>
+          <view class="order-name">全部订单</view>
+        </navigator>
+        <navigator>
+          <view class="iconfont icon-fukuan"></view>
+          <view class="order-name">待付款</view>
+        </navigator>
+        <navigator>
+          <view class="iconfont icon-daishouhuo"></view>
+          <view class="order-name">待收货</view>
+        </navigator>
+        <navigator>
+          <view class="iconfont icon-icon5"></view>
+          <view class="order-name">退款/退货</view>
+        </navigator>
+      </view>
+    </view>
+    <!-- 收货地质管理 -->
+    <view class="address-wrap">收货地址管理</view>
+    <!-- 应用信息 -->
+    <view class="app-info-warp">
+      <view class="info-item contcat">
+        <text>联系客服</text>
+        <text>400-618-4000</text>
+      </view>
+      <view class="info-item">意见反馈</view>
+      <view class="info-item">关于我们</view>
+    </view>
+    <!-- 推荐 -->
+    <view class="recommend-wrap">把应用推荐给其他人</view>
+  </view>
+</view>
